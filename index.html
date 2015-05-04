@@ -4,35 +4,32 @@
     <style type="text/css">
       html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
     </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACKHe_tyCZ23_CCyDDYnpy1zXxy11yUfM">
-    </script>
     <script type="text/javascript">
-      // function initialize() {
-      //   var mapOptions = {
-      //     center: { lat: -34.397, lng: 150.644},
-      //     zoom: 8
-      //   };
-      //   var map = new google.maps.Map(document.getElementById('map-canvas'),
-      //       mapOptions);
-      // }
-      // google.maps.event.addDomListener(window, 'load', initialize);
 function initialize() {
+  var centerLatLng = new google.maps.LatLng( 38.7091743, -9.1534219);
+  
   var mapOptions = {
     zoom: 15,
-    //center: new google.maps.LatLng(-34.397, 150.644)
-    center: { lat: 38.7091743, lng: -9.1534219}
+    center: centerLatLng
   };
 
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+
+  var marker = new google.maps.Marker({
+        position: centerLatLng,
+        // map: map,
+        title: 'Hello World!'
+    });
+    
+  marker.setMap(map);
 }
 
 function loadScript() {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
-      '&signed_in=true&callback=initialize';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyACKHe_tyCZ23_CCyDDYnpy1zXxy11yUfM' +
+       '&v=3.exp&signed_in=false&callback=initialize';
   document.body.appendChild(script);
 }
 
@@ -42,4 +39,7 @@ window.onload = loadScript;
   <body>
     <div id="map-canvas"></div>
   </body>
+  <script type="text/javascript">
+    
+  </script>
 </html>
