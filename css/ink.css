@@ -1,0 +1,22 @@
+body {
+    background: #ededed;
+}
+
+header h1 small:before  {
+    content: "|";
+    margin: 0 0.5em;
+    font-size: 1.6em;
+}
+
+.date {
+    float: right;
+}
+
+summary {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+footer {
+    background: #ccc;
+}
