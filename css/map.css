@@ -3,36 +3,41 @@ html, body, #map-canvas {
     height: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 56.25%; /* 16:9 */
 }
+
+@media screen and (orientation:portrait) {
+    html, body, #map-canvas {
+        padding-bottom: 100%;
+    }
+    
+    .navbar-form.pull-left {
+        padding-left: 1px;
+        padding-right: 0;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    html, body, #map-canvas {
+        padding-bottom: 56.25%; /* 16:9 */
+    }
+}
+
 body {
     padding-top: 50px;
 }
 /* Fix UIControl for Google maps showing compressed */
 #map-canvas img { max-width: none; }
 
-/*#marker-menu {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
+.navbar-form {
+    padding-top: 0;
 }
 
-.list-group-item-text {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
+.open>.dropdown-menu {
+    height: auto;
 }
-
-.list-group-item-heading {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
+.scrollable-menu {
+    max-height: 1000%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
-.list-group-item {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
-}
-
-.list-group-item.active {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
-}
-
-.dropdown-menu {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0.1));
-}
-*/
 
