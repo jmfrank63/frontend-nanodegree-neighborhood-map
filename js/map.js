@@ -1,11 +1,11 @@
 function initialize() {
   var centerLatLng = new google.maps.LatLng( 38.7091743, -9.1534219);
-  
+
   var mapOptions = {
     zoom: 15,
     center: centerLatLng
   };
-  console.log(document.getElementById('map-canvas'));
+
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
@@ -14,7 +14,7 @@ function initialize() {
         // map: map,
         title: 'Olá linda mulher, como chamas-te?!'
     });
-    
+
   marker.setMap(map);
 }
 

@@ -1,9 +1,12 @@
-/* Settings for Google Maps inside an ink column */
+/* Settings for Google Maps inside a bootstrap column */
 html, body, #map-canvas {
-    height: 0;
+    height: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 70%;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+body {
+    padding-top: 50px;
 }
 /* Fix UIControl for Google maps showing compressed */
 #map-canvas img { max-width: none; }
