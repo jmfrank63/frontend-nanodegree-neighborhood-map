@@ -9,10 +9,11 @@ html, body, #map-canvas {
     html, body, #map-canvas {
         padding-bottom: 100%;
     }
-    
+
     .navbar-form.pull-left {
-        padding-left: 1px;
+        padding-left: 0;
         padding-right: 0;
+        max-width: 90%;
     }
 }
 
