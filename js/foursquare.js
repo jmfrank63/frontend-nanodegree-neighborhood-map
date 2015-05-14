@@ -1,7 +1,7 @@
 var foursquare = function (query, callback) {
     /* Foursquare api module
      * comunicates with the foursquare api
-     * return json data
+     * returns json data
      */
     
     // Defaults for the api

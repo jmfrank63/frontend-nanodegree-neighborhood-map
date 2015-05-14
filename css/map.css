@@ -13,7 +13,7 @@ html, body, #map-canvas {
     .navbar-form.pull-left {
         padding-left: 0;
         padding-right: 0;
-        max-width: 90%;
+        max-width: 20%;
     }
 }
 
@@ -35,6 +35,7 @@ body {
 
 .open>.dropdown-menu {
     height: auto;
+    max-width: auto;
 }
 .scrollable-menu {
     max-height: 1000%;
@@ -42,3 +43,23 @@ body {
     overflow-x: hidden;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    margin: auto;
+}
+
+.navbar .navbar-collapse form {
+    white-space: nowrap;
+    float: left;
+}
+
+.navbar .navbar-collapse li {
+    white-space: wrap;
+    max-width: 100%;
+    float: right;
+}
