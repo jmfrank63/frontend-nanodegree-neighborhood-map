@@ -63,3 +63,7 @@ body {
     max-width: 100%;
     float: right;
 }
+
+.addressbox {
+    max-width: 75%;
+}
