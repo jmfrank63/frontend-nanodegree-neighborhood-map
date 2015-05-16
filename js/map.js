@@ -76,10 +76,15 @@ function markerViewModel () {
         var filterString = self.filter().split('|');
         self.markers([]);
         $.each(filterString, function (i, filter) {
+                var invert = false;
+                if(filter[0] === '!') {
+                    filter = filter.slice(1,filter.length - 1);
+                    invert = true;
+                }
                 $.extend(markers, $.grep(self.pool, function(elem) {
                     console.log(filter.toLowerCase());
                     return (elem.name.toLowerCase().indexOf(filter.toLowerCase()) > -1);
-                }, false));
+                }, invert));
         });
         ko.utils.arrayPushAll(self.markers(), markers);
         self.markers.valueHasMutated();
@@ -171,7 +176,6 @@ function markerViewModel () {
                         map.setCenter(latlng.lat(), latlng.lng());
                         self.lat(latlng.lat());
                         self.lng(latlng.lng());
-
                     } else {
                         self.title('Address not found');
                     }
