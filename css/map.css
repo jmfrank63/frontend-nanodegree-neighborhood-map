@@ -33,9 +33,9 @@ body {
     padding-top: 0;
 }
 
-.open>.dropdown-menu {
+.dropdown-menu .open{
     height: auto;
-    max-width: auto;
+    max-width: 200%;
 }
 .scrollable-menu {
     max-height: 1000%;
@@ -55,15 +55,23 @@ body {
 
 .navbar .navbar-collapse form {
     white-space: nowrap;
-    float: left;
+    float: none;
 }
 
 .navbar .navbar-collapse li {
-    white-space: wrap;
+    white-space: normal;
     max-width: 100%;
     float: right;
 }
 
+.numbox {
+    max-width: inherit;
+}
+
+.list-group-item .pull-left p{
+    width: auto;
+    max-width: inherit;
+}
 .addressbox {
     max-width: 75%;
 }
