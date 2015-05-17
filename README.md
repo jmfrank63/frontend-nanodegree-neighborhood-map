@@ -71,7 +71,7 @@ The searches are all done with calls to the foursquare api.
 
 --------------------------------------------------------------
 
-Comments to the instructors
+##Comments to the instructors
 
 Of course one could think of a lot of additional functionallity to be implemented.
 Marker at the center, reverse geocoding, preference for zoom level, listing
