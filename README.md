@@ -96,3 +96,20 @@ yui-compressor -o all.min.js all.js
 Nevertheless I am quite pleased I made it in time. I hope I have met all specifcations,
 but I am ready to do any adjustments required.
 
+-------------------------------------------------------------------
+## Comments for first resubmit
+
+I added your suggestions. As always they are very helpful. 
+The Udacity style guide should now be respected. .map-canvas is now a class.
+Offline.js has been added. I changed padding of the forms and it did the trick.
+I also did some minor adjustments to the prefs menu to make it a little bit
+less look ugly. It's still not a pretty one.
+
+I am planning to use npm as a build manager in the future but for the fixes
+I stuck to manuall installations. Also for package management I will use
+bower in the future. Basicly I plan to follow this article:
+http://blog.keithcirkel.co.uk/why-we-should-stop-using-grunt/
+
+I hope everything is fine now :-) P3 of the full stack developer is waiting.
+
+Thank you for your comments and your support.

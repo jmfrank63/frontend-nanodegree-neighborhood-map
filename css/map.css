@@ -1,12 +1,16 @@
 /* Settings for Google Maps inside a bootstrap column */
-html, body, #map-canvas {
+html,
+body,
+.map-canvas {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 @media screen and (orientation:portrait) {
-    html, body, #map-canvas {
+    html,
+    body,
+    .map-canvas {
         padding-bottom: 100%;
     }
 
@@ -18,7 +22,9 @@ html, body, #map-canvas {
 }
 
 @media screen and (orientation:landscape) {
-    html, body, #map-canvas {
+    html,
+    body,
+    .map-canvas {
         padding-bottom: 56.25%; /* 16:9 */
     }
 }
@@ -27,7 +33,7 @@ body {
     padding-top: 50px;
 }
 /* Fix UIControl for Google maps showing compressed */
-#map-canvas img { max-width: none; }
+.map-canvas img { max-width: none; }
 
 .navbar-form {
     padding-top: 0;
@@ -71,7 +77,13 @@ body {
 .list-group-item .pull-left p{
     width: auto;
     max-width: inherit;
+
 }
+
 .addressbox {
     max-width: 75%;
+}
+
+.navbar-form {
+    padding: 0;
 }

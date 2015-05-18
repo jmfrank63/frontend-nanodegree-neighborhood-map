@@ -1,4 +1,4 @@
-/*global $, GMaps, ko */
+/*global $, GMaps, ko, Offline */
 /*jshint unused: true, node: true */
 /*jslint unparam: true, node: true */
 
@@ -15,7 +15,7 @@ $((function () {
     var mapCenter = {lat: 38.706495, lng: -9.156769};
     // define a new map
     map = new GMaps({
-        div: '#map-canvas',
+        div: '.map-canvas',
         center: mapCenter,
         zoom: 17
     });
@@ -242,6 +242,26 @@ function MarkerViewModel() {
     });
 }
 
+// Offline checking and warning
+$(function () {
+    var $online = $('.online'),
+        $offline = $('.offline');
+
+    Offline.on('confirmed-down', function () {
+        $online.fadeOut(function () {
+            $offline.fadeIn();
+        });
+    });
+
+    Offline.on('confirmed-up', function () {
+        $offline.fadeOut(function () {
+            $online.fadeIn();
+        });
+    });
+
+    Offline.options = { interceptRequests: true };
+
+});
 
 // create the viewModel
 var mvm = new MarkerViewModel();

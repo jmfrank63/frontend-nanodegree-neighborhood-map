@@ -9,7 +9,14 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">html,body,#map-canvas{height:100%;margin:0;padding:0}@media screen and (orientation:portrait){html,body,#map-canvas{padding-bottom:100%}.navbar-form.pull-left{padding-left:0;padding-right:0;max-width:20%}}@media screen and (orientation:landscape){html,body,#map-canvas{padding-bottom:56.25%}}body{padding-top:50px}#map-canvas img{max-width:none}.navbar-form{padding-top:0}.dropdown-menu .open{height:auto;max-width:200%}.scrollable-menu{max-height:1000%;overflow-y:auto;overflow-x:hidden}.navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}.navbar .navbar-collapse{margin:auto}.navbar .navbar-collapse form{white-space:nowrap;float:none}.navbar .navbar-collapse li{white-space:normal;max-width:100%;float:right}.numbox{max-width:inherit}.list-group-item .pull-left p{width:auto;max-width:inherit}.addressbox{max-width:75%}</style>
+
+    <style>html,body,.map-canvas{height:100%;margin:0;padding:0}@media screen and (orientation:portrait){html,body,.map-canvas{padding-bottom:100%}.navbar-form.pull-left{padding-left:0;padding-right:0;max-width:20%}}@media screen and (orientation:landscape){html,body,.map-canvas{padding-bottom:56.25%}}body{padding-top:50px}.map-canvas img{max-width:none}.navbar-form{padding-top:0}.dropdown-menu .open{height:auto;max-width:200%}.scrollable-menu{max-height:1000%;overflow-y:auto;overflow-x:hidden}.navbar .navbar-nav{display:inline-block;float:none;vertical-align:top}.navbar .navbar-collapse{margin:auto}.navbar .navbar-collapse form{white-space:nowrap;float:none}.navbar .navbar-collapse li{white-space:normal;max-width:100%;float:right}.numbox{max-width:inherit}.list-group-item .pull-left p{width:auto;max-width:inherit}.addressbox{max-width:75%}.navbar-form{padding:0}</style>
+    
+    <!-- Offline -->
+    <!--<link href="css/offline-theme-default.css" rel="stylesheet">-->
+    <!--<link href="css/offline-language-english.css" rel="stylesheet">-->
+    <style>.offline-ui,.offline-ui *,.offline-ui:before,.offline-ui:after,.offline-ui *:before,.offline-ui *:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.offline-ui{display:none;position:fixed;background:white;z-index:2000;margin:auto;top:0;left:0;right:0}.offline-ui .offline-ui-content:before{display:inline}.offline-ui .offline-ui-retry{-webkit-user-select:none;-moz-user-select:none;user-select:none;display:none}.offline-ui .offline-ui-retry:before{display:inline}.offline-ui.offline-ui-up.offline-ui-up-5s{display:block}.offline-ui.offline-ui-down{display:block}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-retry{display:block}.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry{display:none}@-webkit-keyframes offline-fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes offline-fadein{0%{opacity:0}100%{opacity:1}}@-ms-keyframes offline-fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes offline-fadein{0%{opacity:0}100%{opacity:1}}@keyframes offline-fadein{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes offline-fadeout-and-hide{0%{opacity:1;display:block}99%{opacity:0;display:block}100%{opacity:0;display:none}}@-moz-keyframes offline-fadeout-and-hide{0%{opacity:1;display:block}99%{opacity:0;display:block}100%{opacity:0;display:none}}@-ms-keyframes offline-fadeout-and-hide{0%{opacity:1;display:block}99%{opacity:0;display:block}100%{opacity:0;display:none}}@-o-keyframes offline-fadeout-and-hide{0%{opacity:1;display:block}99%{opacity:0;display:block}100%{opacity:0;display:none}}@keyframes offline-fadeout-and-hide{0%{opacity:1;display:block}99%{opacity:0;display:block}100%{opacity:0;display:none}}@-webkit-keyframes offline-rotation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg)}100%{transform:rotate(359deg);-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-ms-transform:rotate(359deg);-o-transform:rotate(359deg)}}@-moz-keyframes offline-rotation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg)}100%{transform:rotate(359deg);-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-ms-transform:rotate(359deg);-o-transform:rotate(359deg)}}@-ms-keyframes offline-rotation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg)}100%{transform:rotate(359deg);-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-ms-transform:rotate(359deg);-o-transform:rotate(359deg)}}@-o-keyframes offline-rotation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg)}100%{transform:rotate(359deg);-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-ms-transform:rotate(359deg);-o-transform:rotate(359deg)}}@keyframes offline-rotation{0%{transform:rotate(0deg);-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg)}100%{transform:rotate(359deg);-webkit-transform:rotate(359deg);-moz-transform:rotate(359deg);-ms-transform:rotate(359deg);-o-transform:rotate(359deg)}}.offline-ui{-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;font-family:"Helvetica Neue",sans-serif;padding:1em;top:1em;width:38em;max-width:100%;overflow:hidden}@media(max-width:38em){.offline-ui{-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;top:0}}.offline-ui .offline-ui-content:before{line-height:1.25em}.offline-ui .offline-ui-retry{position:absolute;right:3em;top:0;bottom:0;background:rgba(0,0,0,0.1);text-decoration:none;color:inherit;line-height:3.5em;height:3.5em;margin:auto;padding:0 1em}.offline-ui.offline-ui-up{-webkit-animation:offline-fadeout-and-hide forwards .5s 2s;-moz-animation:offline-fadeout-and-hide forwards .5s 2s;-ms-animation:offline-fadeout-and-hide forwards .5s 2s;-o-animation:offline-fadeout-and-hide forwards .5s 2s;animation:offline-fadeout-and-hide forwards .5s 2s;-webkit-backface-visibility:hidden;background:#d6e9c6;color:#468847}.offline-ui.offline-ui-down{-webkit-animation:offline-fadein .5s;-moz-animation:offline-fadein .5s;-ms-animation:offline-fadein .5s;-o-animation:offline-fadein .5s;animation:offline-fadein .5s;-webkit-backface-visibility:hidden;background:#ec8787;color:#551313}.offline-ui.offline-ui-down.offline-ui-connecting,.offline-ui.offline-ui-down.offline-ui-waiting{background:#f8ecad;color:#7c6d1f;padding-right:3em}.offline-ui.offline-ui-down.offline-ui-connecting:after,.offline-ui.offline-ui-down.offline-ui-waiting:after{-webkit-animation:offline-rotation .7s linear infinite;-moz-animation:offline-rotation .7s linear infinite;-ms-animation:offline-rotation .7s linear infinite;-o-animation:offline-rotation .7s linear infinite;animation:offline-rotation .7s linear infinite;-webkit-backface-visibility:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;content:" ";display:block;position:absolute;right:1em;top:0;bottom:0;margin:auto;height:1em;width:1em;border:2px solid rgba(0,0,0,0);border-top-color:#7c6d1f;border-left-color:#7c6d1f;opacity:.7}.offline-ui.offline-ui-down.offline-ui-waiting{padding-right:11em}.offline-ui.offline-ui-down.offline-ui-waiting.offline-ui-reconnect-failed-2s{padding-right:0}</style>
+    <style>.offline-ui .offline-ui-retry:before{content:"Reconnect"}.offline-ui.offline-ui-up .offline-ui-content:before{content:"Your computer is connected to the internet."}@media(max-width:1024px){.offline-ui.offline-ui-up .offline-ui-content:before{content:"Your device is connected to the internet."}}@media(max-width:568px){.offline-ui.offline-ui-up .offline-ui-content:before{content:"Your device is connected."}}.offline-ui.offline-ui-down .offline-ui-content:before{content:"Your computer lost its internet connection."}@media(max-width:1024px){.offline-ui.offline-ui-down .offline-ui-content:before{content:"Your device lost its internet connection."}}@media(max-width:568px){.offline-ui.offline-ui-down .offline-ui-content:before{content:"Your device isn't connected."}}.offline-ui.offline-ui-down.offline-ui-connecting .offline-ui-content:before,.offline-ui.offline-ui-down.offline-ui-connecting-2s .offline-ui-content:before{content:"Attempting to reconnect..."}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " seconds..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"]:before{content:"Reconnecting in " attr(data-retry-in-value) "s..."}}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " second..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="second"][data-retry-in-value="1"]:before{content:"Reconnecting in " attr(data-retry-in-value) "s..."}}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " minutes..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"]:before{content:"Reconnecting in " attr(data-retry-in-value) "m..."}}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " minute..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="minute"][data-retry-in-value="1"]:before{content:"Reconnecting in " attr(data-retry-in-value) "m..."}}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " hours..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"]:before{content:"Reconnecting in " attr(data-retry-in-value) "h..."}}.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before{content:"Connection lost. Reconnecting in " attr(data-retry-in-value) " hour..."}@media(max-width:568px){.offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-content[data-retry-in-unit="hour"][data-retry-in-value="1"]:before{content:"Reconnecting in " attr(data-retry-in-value) "h..."}}.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s.offline-ui-waiting .offline-ui-retry{display:none}.offline-ui.offline-ui-down.offline-ui-reconnect-failed-2s .offline-ui-content:before{content:"Connection attempt failed."}</style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +24,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <!--<script src="js/lib/offline.min.js"></script>-->
     <script>
       function initialize() {
         var script = document.createElement('script');
@@ -58,7 +65,6 @@
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
               </button>
             </form>
-
             <form class="navbar-form navbar-left" role="search" data-bind="submit: submitFilter">
               <div class="form-group pull-left">
                 <input type="text" class="form-control" placeholder="Filter" data-bind="value: filter">
@@ -82,7 +88,7 @@
                     </a>
                   </li>
                 </ul>
-            </li>
+              </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                   <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -91,32 +97,36 @@
                 <div class="dropdown-menu scrollable-menu" role="menu">
                   <ul class="list-group">
                     <li class="list-group-item pull-left">
-                      <p class="list-group-item-text">
+                      <p class="list-group-item-text pull-left">
                         <label>Keep Results:</label> <input type="checkbox" data-bind="checked: keep" />
                       </p>
                     </li>
-                    <li class="list-group-item">
-                      <p class="list-group-item-text">
+                    <li class="list-group-item pull-left">
+                      <p class="list-group-item-text pull-left">
                         <label>Limit:</label> <input class="numbox" type="text" name="limit" data-bind="value: limit" />
                       </p>
                     </li>
-                    <li class="list-group-item">
-                      <p class="list-group-item-text">
+                    <li class="list-group-item pull-left">
+                      <p class="list-group-item-text pull-left">
                         <label>Radius: </label> <input class="numbox" type="text" name="radius" data-bind="value: radius" />
                       </p>
                     </li>
                     <li class="list-group-item pull-left">
-                      <p class="list-group-item-text">
+                      <p class="list-group-item-text pull-left">
                         <label>Locate me: </label>
                         <button type="button" class="btn btn-default" aria-label="Left Align" data-bind="click: geoLocate">
                           <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
                         </button>
                       </p>
                     </li>
-                    <li class="list-group-item">
-                      <p class="list-group-item-text">
+                    <li class="list-group-item pull-left">
+                      <p class="list-group-item-text pull-left">
                         <label>Lat: </label> <input class="numbox" type="text" name="latitute" data-bind="value: lat" />
-                        <label>Long: </label> <input class="numbox" type="text" name="longitude" data-bind="value: lng" />
+                       </p>
+                    </li>
+                    <li class="list-group-item pull-left">
+                      <p class="list-group-item-text pull-left">
+                         <label>Long: </label> <input class="numbox" type="text" name="longitude" data-bind="value: lng" />
                       </p>
                     </li>
                     <li class="list-group-item pull-left">
@@ -136,6 +146,6 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="map-canvas"></div> <!-- The div the map draws -->
+    <div class="map-canvas"></div> <!-- The div the map draws -->
   </body>
 </html>
